@@ -1,0 +1,112 @@
+/*
+    Hastane otomasyonu projesi icin
+
+    Claslar oluşturalım:
+        HastaneRunner classi olusturunuz
+        Hastane
+        VeriBankasi
+        Durum
+        Hasta
+        Doktor
+        HastaRunner
+       // Giris
+    - HastaneRunner classin içinde iken  hastane1 adında bir obje
+     oluşturalım. obje hastane clasına bağlı olsun
+        private static Hastane hastane1 = new Hastane ();
+
+     - VeriBankasi Clasinda:
+            String tipinde:
+                doctorIsmi
+                doktorSoyismi
+                doktorBransi
+                hastaIsmi
+                hastaSoyismi
+                hastalikDurumu
+
+            Integer tipinde:
+                doktorSicilNo
+                hastaNolari
+           arraylar oluşturalım va atama yapalım
+
+    -Durum clasında:
+        private String aktuelDurum;
+        private boolean aciliyet;
+
+       değişkenleri oluşturalım sonra constructor ve getter-setter metodlarını
+       yazalım. tostring metoduda olsun
+
+    - Hasta clasında
+        private String isim;
+        private String soyIsim;
+        private int hastaID;
+        private Durum hastaDurumu;
+
+        değişkenleri oluşturalım sonra constructor ve getter-setter metodlarını
+        yazalım. tostring metoduda olsun
+
+    - Doktor clasında
+            private String isim;
+            private String soyIsim;
+            private String unvan;
+
+         değişkenleri oluşturalım sonra constructor ve getter-setter metodlarını
+         yazalım. tostring metoduda olsun
+
+    - Hastane classiniz sizin VeriBankasi classinizi
+      extend etmelidir
+
+    - Hastane clasında
+            Doktor doktor = new Doktor();
+            Hasta hasta = new Hasta();
+            objelerini oluşturalım
+
+     -HastaneRunner classinda
+        public static Doktor doktorBul(String unvan){ }
+        oluştur
+            içinde
+            Doktor doktor= new Doktor();oluştur
+        Simdi loop kullanarak unvaninizla Doktor objenizin tum variablelarini set
+        ediniz VeriBankasindan gelen bilgilerle
+        Ve return doktor;
+
+     -   HastaRunner
+
+    17. sayfa kontrol 18 de aynı
+
+
+
+
+
+    -HastaneRunner classinda
+        public static Hasta hastaBul(String actualCase)
+        Burada Hasta objesi olusturunuz Hasta classindan
+        Hasta hasta = new Hasta();
+        Loop kullaniniz ve aktuelDurumu kiyaslayiniz Data classindan
+        Hasta bilgilerini kullaniniz ve tum Hasta Objesindeki bilgileri set ediniz
+        Ve sonra hastaDurumuBul method unu cagiriniz ve Durum Objesini set
+        ediniz. Son olarak return hasta;
+
+    - Gereken adimlari izlediginizde
+      Basarili bir şekilde Doktor ve Hasta
+      objelerinizi set edebilirsiniz
+      hastane1.setDoctor
+      hastane1.setPatient
+      using doktorBul(unvan)
+      hastaBul(aktuelDurum)
+
+
+
+        Son olarak asagidaki bilgileri test data
+        olarak kullaniniz
+         String patientCase = "Allerji“;
+         "Bas agrisi",
+         "Diabet",
+         "Soguk alginligi",
+         "Migren",
+         "Kalp hastaliklari",
+
+
+
+
+
+*/
