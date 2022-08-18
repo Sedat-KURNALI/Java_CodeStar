@@ -1,4 +1,4 @@
 package Hastane_projesi;
 
-public class VeriBankasi {
+public class AcilServis {
 }
