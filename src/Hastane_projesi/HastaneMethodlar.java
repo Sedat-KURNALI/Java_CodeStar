@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class HastaneMethodlar {
     static Scanner scan = new Scanner(System.in);
 
-    public static void anaEkran() {
+    public static void anaEkran() throws InterruptedException {
         String tercih = "";
         System.out.println("=========== CodeStar Hastanesi =============\n" +
                 "=====   Bilgi Otomasyon Programi   ======\n" +
