@@ -73,7 +73,7 @@ public class Hastalar {
                 k = 1;
             }
         }
-        if (k == 0) System.out.println("Bu kimlikte ki?i yok");
+        if (k == 0) System.out.println("Bu kimlikte kisi yok");
         Thread.sleep(5000);
 
     }
@@ -81,4 +81,29 @@ public class Hastalar {
     public static void tahlilEkrani() {
         System.out.println("YAPIM ASAMASINDA");
     }
+    public static void hastaKayit() throws InterruptedException {
+        System.out.println("TC kimlik no");
+        String tcNo = scan.nextLine();
+
+        System.out.println("Isim");
+        String isim = scan.nextLine();
+
+        System.out.println("Soyisim");
+        String soyisim = scan.nextLine();
+
+        System.out.println("Dogum yili");
+        String dogumYili = scan.nextLine();
+
+        System.out.println("Memleket");
+        String memleket = scan.nextLine();
+
+        String eklenecekValue = isim + ", " + soyisim + ", " + dogumYili + ", " + memleket;
+
+        hastalarMap.put(tcNo, eklenecekValue);
+
+        System.out.println("Hasta bilgi ekranina yonlendiriliyorsunuz");
+
+        Thread.sleep(3000);
+    }
+
 }

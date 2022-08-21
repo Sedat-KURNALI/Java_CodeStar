@@ -1,8 +1,8 @@
 public class OtobusIci {
     public static void main(String[] args) {
-
-
-        System.out.println("╠╠Ò╔╚╬Ãã ÇÖŞİĞÜIöçişüı");
+        String k[] = new String[50];
+        for (int i = 0; i < k.length; i++) {
+            k[i] = "B";
+        }
     }
-
 }
