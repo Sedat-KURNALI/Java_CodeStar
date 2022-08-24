@@ -3,77 +3,77 @@ package lambda_practice;
 public class C0_Lambda_Aciklamalar {
          /*
      ForEach:
-     Stream içindeki veriyi tek tek tüketmekiçin oluşturulmuş bir yapıdır.
-     **Terminal işlemi olduğundan dolayı stream artık tüketilmiş olarak kabul edilir ve
-     artık kullanılamayacağı anlamına gelir.
+     Stream iÃ§indeki veriyi tek tek tÃ¼ketmekiÃ§in oluÅŸturulmuÅŸ bir yapÄ±dÄ±r.
+     **Terminal iÅŸlemi olduÄŸundan dolayÄ± stream artÄ±k tÃ¼ketilmiÅŸ olarak kabul edilir ve
+     artÄ±k kullanÄ±lamayacaÄŸÄ± anlamÄ±na gelir.
 
 
     Filter:
-    Dizimiz veya Collection’ımız üzerinde bizim belirteceğimiz koşullar doğrultusunda
-    filtreleme işlemi yapmamıza yarayan bir yapıdır.
-    Bu işlem sonrası belirttiğimiz koşula uygun olmayan elemanlar bir sonraki aşamada kullanılamazlar.
-    Artık elimizde filtrelenmiş/süzülmüş/elenmiş bir veri vardır
+    Dizimiz veya Collectionâ€™Ä±mÄ±z Ã¼zerinde bizim belirteceÄŸimiz koÅŸullar doÄŸrultusunda
+    filtreleme iÅŸlemi yapmamÄ±za yarayan bir yapÄ±dÄ±r.
+    Bu iÅŸlem sonrasÄ± belirttiÄŸimiz koÅŸula uygun olmayan elemanlar bir sonraki aÅŸamada kullanÄ±lamazlar.
+    ArtÄ±k elimizde filtrelenmiÅŸ/sÃ¼zÃ¼lmÃ¼ÅŸ/elenmiÅŸ bir veri vardÄ±r
 
 
     Collect:
-    Collect metodu Stream türündeki nesneleri başka biçimdeki nesneye,
-    veri yapısına dönüştürmek için kullanılır.
+    Collect metodu Stream tÃ¼rÃ¼ndeki nesneleri baÅŸka biÃ§imdeki nesneye,
+    veri yapÄ±sÄ±na dÃ¶nÃ¼ÅŸtÃ¼rmek iÃ§in kullanÄ±lÄ±r.
 
 
-    Map :Stream içerisinde erişilen her bir eleman üzerinde işlem yapmamıza
-    ve başka elemanlara dönüştürmemize imkan sağlayan
+    Map :Stream iÃ§erisinde eriÅŸilen her bir eleman Ã¼zerinde iÅŸlem yapmamÄ±za
+    ve baÅŸka elemanlara dÃ¶nÃ¼ÅŸtÃ¼rmemize imkan saÄŸlayan
 
 
     Distinct:
-    Stream içerisinde bulunan ve tekrar eden elemanlar varsa
-     bunları distinct metodu ile çıkartabilir ve
-    elimizde tekrar etmeyen birbirinden farklı
-    elemanlar barından bir veri setimiz kalır
+    Stream iÃ§erisinde bulunan ve tekrar eden elemanlar varsa
+     bunlarÄ± distinct metodu ile Ã§Ä±kartabilir ve
+    elimizde tekrar etmeyen birbirinden farklÄ±
+    elemanlar barÄ±ndan bir veri setimiz kalÄ±r
 
 
     Sorted:
-    Bazı durumlarda elimizde ki veri setini belirli bir parametreye göre sıralamak isteyebiliriz.
-            2 türü bulunmaktadır. Birinci hali parametre almaz küçükten büyüğe şekilde sıralar.
-    İkinci formatı ise Comparator arayüzünden türediği için
-    bizim belirlemiş olduğumuz parametreye göre sıralama işlemi yapar.
+    BazÄ± durumlarda elimizde ki veri setini belirli bir parametreye gÃ¶re sÄ±ralamak isteyebiliriz.
+            2 tÃ¼rÃ¼ bulunmaktadÄ±r. Birinci hali parametre almaz kÃ¼Ã§Ã¼kten bÃ¼yÃ¼ÄŸe ÅŸekilde sÄ±ralar.
+    Ä°kinci formatÄ± ise Comparator arayÃ¼zÃ¼nden tÃ¼rediÄŸi iÃ§in
+    bizim belirlemiÅŸ olduÄŸumuz parametreye gÃ¶re sÄ±ralama iÅŸlemi yapar.
 
 
 
     reduce : indirgeme demektir.
-    kullanımı; elemanları teker teker işler. Bir önceki adımda elde edilen sonuç,
-    bir sonraki elemanla işlemle tutulur
+    kullanÄ±mÄ±; elemanlarÄ± teker teker iÅŸler. Bir Ã¶nceki adÄ±mda elde edilen sonuÃ§,
+    bir sonraki elemanla iÅŸlemle tutulur
 
 
-    peek () 'in Javadoc sayfası şöyle diyor: " Bu yöntem, temelde, öğeleri bir
-    ardışık düzen içinde belirli bir noktadan geçerken görmek istediğiniz
-    yerde hata ayıklamayı desteklemek için vardır .
+    peek () 'in Javadoc sayfasÄ± ÅŸÃ¶yle diyor: " Bu yÃ¶ntem, temelde, Ã¶ÄŸeleri bir
+    ardÄ±ÅŸÄ±k dÃ¼zen iÃ§inde belirli bir noktadan geÃ§erken gÃ¶rmek istediÄŸiniz
+    yerde hata ayÄ±klamayÄ± desteklemek iÃ§in vardÄ±r .
 
 
-    Match operasyonu bir akışın belirli kriterleri sağlayıp sağlamadığını ölçmek için kullanılır.
-    Map den farkı her iterasyonu tek tek değerlendirip sonucu yansıtmaz bunun yerine tüm koleksiyonu
-    değerlendirerek sonucu yansıtmasıdır. Match operasyonunun 3 çeşit kullanımı bulunmaktadır;
+    Match operasyonu bir akÄ±ÅŸÄ±n belirli kriterleri saÄŸlayÄ±p saÄŸlamadÄ±ÄŸÄ±nÄ± Ã¶lÃ§mek iÃ§in kullanÄ±lÄ±r.
+    Map den farkÄ± her iterasyonu tek tek deÄŸerlendirip sonucu yansÄ±tmaz bunun yerine tÃ¼m koleksiyonu
+    deÄŸerlendirerek sonucu yansÄ±tmasÄ±dÄ±r. Match operasyonunun 3 Ã§eÅŸit kullanÄ±mÄ± bulunmaktadÄ±r;
 
-        AnyMath: Vereceğimiz şarta bağlı olarak Stream içerisinde gezinir ve
-        herhangi bir elemanla eşleşme durumunda true dönecektir.
-
-
-        AllMatch: Verilen şarta göre Stream içerisindeki tüm elemanların
-        bu şarta uyması durumunda true dönecektir.
+        AnyMath: VereceÄŸimiz ÅŸarta baÄŸlÄ± olarak Stream iÃ§erisinde gezinir ve
+        herhangi bir elemanla eÅŸleÅŸme durumunda true dÃ¶necektir.
 
 
-        NoneMatch: Şarta göre Stream içindeki hiç bir
-        elemanın şartı sağlamaması durumunda true dönecektir.
+        AllMatch: Verilen ÅŸarta gÃ¶re Stream iÃ§erisindeki tÃ¼m elemanlarÄ±n
+        bu ÅŸarta uymasÄ± durumunda true dÃ¶necektir.
+
+
+        NoneMatch: Åarta gÃ¶re Stream iÃ§indeki hiÃ§ bir
+        elemanÄ±n ÅŸartÄ± saÄŸlamamasÄ± durumunda true dÃ¶necektir.
 
 
     Limit
-    Elimizde var olan bir veri kaynağını, göstermek istediğimiz kadarını göstermemize yarayan,
-    sınırlandıran bir metoddur. Parametre olarak vereceğimiz rakamla aslında
-    Stream içerisinde dönen çok sayıda veri var
-    ancak sen bize şu kadarını göster diyoruz.
+    Elimizde var olan bir veri kaynaÄŸÄ±nÄ±, gÃ¶stermek istediÄŸimiz kadarÄ±nÄ± gÃ¶stermemize yarayan,
+    sÄ±nÄ±rlandÄ±ran bir metoddur. Parametre olarak vereceÄŸimiz rakamla aslÄ±nda
+    Stream iÃ§erisinde dÃ¶nen Ã§ok sayÄ±da veri var
+    ancak sen bize ÅŸu kadarÄ±nÄ± gÃ¶ster diyoruz.
 
 
-    findFirst() => İlk elemanı verir. Bu akışın ilk elemanını açıklayan bir İsteğe bağlı veya akış boşsa boş bir İsteğe bağlı döndürür.
-    Akışın karşılaşma sırası yoksa herhangi bir öğe iade edilebilir. Optional return eder.
+    findFirst() => Ä°lk elemanÄ± verir. Bu akÄ±ÅŸÄ±n ilk elemanÄ±nÄ± aÃ§Ä±klayan bir Ä°steÄŸe baÄŸlÄ± veya akÄ±ÅŸ boÅŸsa boÅŸ bir Ä°steÄŸe baÄŸlÄ± dÃ¶ndÃ¼rÃ¼r.
+    AkÄ±ÅŸÄ±n karÅŸÄ±laÅŸma sÄ±rasÄ± yoksa herhangi bir Ã¶ÄŸe iade edilebilir. Optional return eder.
 
 
     // Arraylerde Stream kullanabilmek icin 2 yol vardir
@@ -83,44 +83,44 @@ public class C0_Lambda_Aciklamalar {
 
 
     Count
-    Stream içerisinde bulunan toplam veri sayısını öğrenmemize yarar.
+    Stream iÃ§erisinde bulunan toplam veri sayÄ±sÄ±nÄ± Ã¶ÄŸrenmemize yarar.
 
 
-    flatMap() => Herhangi bir Collection’daki (Array gibi) elemanları birer birer Stream’e yerleştirir.
-    flatMap()’i kullanabilmek için elimizde bir Collection olmak zorunda.
+    flatMap() => Herhangi bir Collectionâ€™daki (Array gibi) elemanlarÄ± birer birer Streamâ€™e yerleÅŸtirir.
+    flatMap()â€™i kullanabilmek iÃ§in elimizde bir Collection olmak zorunda.
 
 
-    split() => Bu String öğesini verilen normal ifadenin eşleşmelerine böler.
-    Bu yöntem, iki bağımsız değişkenli bölünmüş yöntemi verilen ifade ve sıfır sınır değeriyle çağırır gibi çalışır.
-    Sondaki boş dizeler bu nedenle sonuç dizisine dahil edilmez.
+    split() => Bu String Ã¶ÄŸesini verilen normal ifadenin eÅŸleÅŸmelerine bÃ¶ler.
+    Bu yÃ¶ntem, iki baÄŸÄ±msÄ±z deÄŸiÅŸkenli bÃ¶lÃ¼nmÃ¼ÅŸ yÃ¶ntemi verilen ifade ve sÄ±fÄ±r sÄ±nÄ±r deÄŸeriyle Ã§aÄŸÄ±rÄ±r gibi Ã§alÄ±ÅŸÄ±r.
+    Sondaki boÅŸ dizeler bu nedenle sonuÃ§ dizisine dahil edilmez.
 
 
-    Optional<Integer> => Bir Class’tır. Boş olmayan bir değer içerebilen veya içermeyen bir kap Objecttir.
-    *****Bir değer varsa, isPresent () true, get () ise değeri döndürecektir.
-    Ek olarak, bu sınıf, bir int'i bir String'e ve bir String'i bir int'e dönüştürmek için çeşitli yöntemler
-    ve ayrıca bir int ile ilgilenirken yararlı olan diğer sabitler ve yöntemler sağlar. Exception gibi çalışır.
+    Optional<Integer> => Bir Classâ€™tÄ±r. BoÅŸ olmayan bir deÄŸer iÃ§erebilen veya iÃ§ermeyen bir kap Objecttir.
+    *****Bir deÄŸer varsa, isPresent () true, get () ise deÄŸeri dÃ¶ndÃ¼recektir.
+    Ek olarak, bu sÄ±nÄ±f, bir int'i bir String'e ve bir String'i bir int'e dÃ¶nÃ¼ÅŸtÃ¼rmek iÃ§in Ã§eÅŸitli yÃ¶ntemler
+    ve ayrÄ±ca bir int ile ilgilenirken yararlÄ± olan diÄŸer sabitler ve yÃ¶ntemler saÄŸlar. Exception gibi Ã§alÄ±ÅŸÄ±r.
 
-    #ifPresent – Varsa yap, yoksa yapma
-    Eğer bir Optional içerisinde sadece veri varsa (null değilse) bir işin yapılması isteniyorsa #ifPresent metodu kullanılabilir.
-
-
-    Comparator => bir Class’tır. Compar karşılaştırmak demektir. Bazı nesneler koleksiyonuna toplam sıralama uygulayan bir karşılaştırma işlevi.
-    Karşılaştırıcılar, sıralama düzeni üzerinde hassas kontrol sağlamak için bir sıralama yöntemine (Collections.sort veya Arrays.sort gibi) aktarılabilir.
-    Karşılaştırıcılar, belirli veri yapılarının (sıralı kümeler veya sıralı haritalar gibi) sırasını kontrol etmek veya doğal sıralaması olmayan
-    nesnelerin koleksiyonları için bir sıralama sağlamak için de kullanılabilir.
-
-    reverseOrder() => Comparator Class’ının bir methodudur. Doğal sıralamanın tersini (büyükten küçüğe) uygulayan bir Comparator (karşılaştırıcı) döndürür.
-    comparing() => karşılaştırma demektir.
-    reversed() => Bu karşılaştırıcının (comparator) ters sıralanmasını uygulayan bir karşılaştırıcı (comparator) döndürür.
+    #ifPresent â€“ Varsa yap, yoksa yapma
+    EÄŸer bir Optional iÃ§erisinde sadece veri varsa (null deÄŸilse) bir iÅŸin yapÄ±lmasÄ± isteniyorsa #ifPresent metodu kullanÄ±labilir.
 
 
-    skip(1) => atlama demek. Akışın ilk n elemanını attıktan sonra bu akışın kalan elemanlarından oluşan bir akış döndürür.
-    Bu akış n'den daha az öğe içeriyorsa, boş bir akış döndürülür. Bu, durum bilgisi olan bir ara işlemdir.
-    skip(list.size()-1) => List’in uzunluğunun 1 eksiğini yazarsak son elemanı yazdırırız.
+    Comparator => bir Classâ€™tÄ±r. Compar karÅŸÄ±laÅŸtÄ±rmak demektir. BazÄ± nesneler koleksiyonuna toplam sÄ±ralama uygulayan bir karÅŸÄ±laÅŸtÄ±rma iÅŸlevi.
+    KarÅŸÄ±laÅŸtÄ±rÄ±cÄ±lar, sÄ±ralama dÃ¼zeni Ã¼zerinde hassas kontrol saÄŸlamak iÃ§in bir sÄ±ralama yÃ¶ntemine (Collections.sort veya Arrays.sort gibi) aktarÄ±labilir.
+    KarÅŸÄ±laÅŸtÄ±rÄ±cÄ±lar, belirli veri yapÄ±larÄ±nÄ±n (sÄ±ralÄ± kÃ¼meler veya sÄ±ralÄ± haritalar gibi) sÄ±rasÄ±nÄ± kontrol etmek veya doÄŸal sÄ±ralamasÄ± olmayan
+    nesnelerin koleksiyonlarÄ± iÃ§in bir sÄ±ralama saÄŸlamak iÃ§in de kullanÄ±labilir.
+
+    reverseOrder() => Comparator Classâ€™Ä±nÄ±n bir methodudur. DoÄŸal sÄ±ralamanÄ±n tersini (bÃ¼yÃ¼kten kÃ¼Ã§Ã¼ÄŸe) uygulayan bir Comparator (karÅŸÄ±laÅŸtÄ±rÄ±cÄ±) dÃ¶ndÃ¼rÃ¼r.
+    comparing() => karÅŸÄ±laÅŸtÄ±rma demektir.
+    reversed() => Bu karÅŸÄ±laÅŸtÄ±rÄ±cÄ±nÄ±n (comparator) ters sÄ±ralanmasÄ±nÄ± uygulayan bir karÅŸÄ±laÅŸtÄ±rÄ±cÄ± (comparator) dÃ¶ndÃ¼rÃ¼r.
 
 
-    Collectors.toList() => Öğeleri koleksiyonlarda toplamak, öğeleri çeşitli kriterlere göre özetlemek gibi çeşitli
-    yararlı azaltma işlemlerini uygulayan Collector Uygulamaları.
+    skip(1) => atlama demek. AkÄ±ÅŸÄ±n ilk n elemanÄ±nÄ± attÄ±ktan sonra bu akÄ±ÅŸÄ±n kalan elemanlarÄ±ndan oluÅŸan bir akÄ±ÅŸ dÃ¶ndÃ¼rÃ¼r.
+    Bu akÄ±ÅŸ n'den daha az Ã¶ÄŸe iÃ§eriyorsa, boÅŸ bir akÄ±ÅŸ dÃ¶ndÃ¼rÃ¼lÃ¼r. Bu, durum bilgisi olan bir ara iÅŸlemdir.
+    skip(list.size()-1) => Listâ€™in uzunluÄŸunun 1 eksiÄŸini yazarsak son elemanÄ± yazdÄ±rÄ±rÄ±z.
+
+
+    Collectors.toList() => Ã–ÄŸeleri koleksiyonlarda toplamak, Ã¶ÄŸeleri Ã§eÅŸitli kriterlere gÃ¶re Ã¶zetlemek gibi Ã§eÅŸitli
+    yararlÄ± azaltma iÅŸlemlerini uygulayan Collector UygulamalarÄ±.
 
     // dosya eklemek icin 2 yol var
     1) Files.lines(Path.of("path")   buradan stream e eklemek icin
@@ -131,7 +131,7 @@ public class C0_Lambda_Aciklamalar {
     satir.map(t->t.split(" ")).
                     flatMap(Arrays::stream). kelimelere ulasmamizi saglar
 
-    `sum() Fonksiyonu: Kendisine verilen bir dizi sayıyı alıp bu sayıları birbiriyle toplamaya yarar
+    `sum() Fonksiyonu: Kendisine verilen bir dizi sayÄ±yÄ± alÄ±p bu sayÄ±larÄ± birbiriyle toplamaya yarar
 
 
 

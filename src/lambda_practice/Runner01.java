@@ -1,16 +1,16 @@
 package lambda_practice;
 
-public class Runner01 extends Lambda01 {//inherite birazdan
+public class Runner01 extends Lambda01{//inherite birazdan
 
     public static void main(String[] args) {
 
-        // aHarfleriSilenGerisiniYazdiran(names);
+       // aHarfleriSilenGerisiniYazdiran(names);
         System.out.println("**************");
-        //  maxElemanBul(numbers);
+      //  maxElemanBul(numbers);
         System.out.println("**************");
-        //  elemanlariTopla(numbers);
+      //  elemanlariTopla(numbers);
         System.out.println("**************");
-        // elemanlariCarp(numbers);
+       // elemanlariCarp(numbers);
         System.out.println("**************");
         //teklerinKareBuyuktenKucuge(numbers);
         System.out.println("**************");
@@ -18,6 +18,9 @@ public class Runner01 extends Lambda01 {//inherite birazdan
         System.out.println("**************");
         karkterEnFazla(menu);
         System.out.println("**************");
+
+
+
 
     }
 }
