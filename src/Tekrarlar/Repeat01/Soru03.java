@@ -1,5 +1,7 @@
 package Tekrarlar.Repeat01;
 
+import java.util.Scanner;
+
 public class Soru03 {
     /*
         3.SORU :
@@ -10,18 +12,22 @@ public class Soru03 {
         Output: 165
      */
     public static void main(String[] args) {
-        double hour = 3;
-        double minutes = 10;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Saatin Akrep ve Yelkovan arasindaki farkini bulmak için saat ve dakikayi ayrı ayrı giriniz!");
+
+        System.out.print("Lutfen Saati Giriniz : ");
+        double hour = scan.nextDouble();
+
+        System.out.print("Lutfen Dakikayi Giriniz : ");
+        double minutes = scan.nextDouble();
 
         System.out.println("Akrep ile Yelkovan arasindaki aci farki : " + aciAkrepYelkovanFarki(hour, minutes));
-
     }
 
     public static double aciAkrepYelkovanFarki(double hour, double minutes) {
         double aci = 0;
         double dakikaAcisi = 0;
         double saatAcisi = 0;
-
         if (hour > 11) hour -= 12;
         dakikaAcisi = 6 * minutes;
         saatAcisi = hour * 30 + 0.5 * minutes;
