@@ -2,6 +2,7 @@ package lambda_deneme;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -90,6 +91,37 @@ public class Methods {
     public static void ciftElemanlarinCarpimi03(List<Integer> sayi) {
         System.out.println(sayi.stream().filter(Utilty::ciftBul).reduce(Math::multiplyExact).get());
     }
+
+    // 1. Yol : tek sayilarin karesini buyukten kucuge yazan methodu yazin
+    public static void teklerinKaresiniBulma01(List<Integer> sayi) {
+        sayi.stream()
+                .filter(t -> t % 2 == 1)
+                .map(t -> t * t)
+                .sorted(Comparator.reverseOrder())
+                .forEach(t -> System.out.print(t + " "));
+    }
+
+    // 2. Yol : tek sayilarin karesini buyukten kucuge yazan methodu yazin
+    public static void teklerinKaresiniBulma02(List<Integer> sayi) {
+        sayi.stream()
+                .filter(Utilty::tekBul)
+                .map(t -> t * t)
+                .sorted(Comparator.reverseOrder())
+                .forEach(Utilty::yazdir);
+    }
+
+    // son harfe göre ters sirali yazdir
+    public static void sonHarfeGoreTersSiraliYazdir(List<String> yemek) {
+        yemek.stream()
+                .sorted(Comparator.
+                        comparing(t->
+                                t.toString()
+                                        .charAt(t.toString().length()-1))
+                        .reversed())
+                .forEach(Utilty::yazdir);
+    }
+
+
 
 
 

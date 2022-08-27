@@ -48,6 +48,15 @@ public class Main extends Methods {
         System.out.println("Cift elemanlarin carpimini bulan method 3");
         ciftElemanlarinCarpimi03(numbers);
         System.out.println("-------------------");
+        System.out.println("Tek sayilarin karesini buyukten kucuge yazan method 1");
+        teklerinKaresiniBulma01(numbers);
+        System.out.println("\n-------------------");
+        System.out.println("Tek sayilarin karesini buyukten kucuge yazan method 2");
+        teklerinKaresiniBulma02(numbers);
+        System.out.println("\n-------------------");
+        System.out.println("Son Harfe Gore Ters Sirali yazan method");
+        sonHarfeGoreTersSiraliYazdir(menu);
+        System.out.println("\n-------------------");
 
         System.out.println("-------------------");
 
