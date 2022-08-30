@@ -2,7 +2,7 @@ package kontrolEt.P2_Ternary_IfStatements;
 
 import java.util.Scanner;
 
-public class vücudKitleEndeksiHesaplama {
+public class vucutKitleEndeksiHesaplama {
 
 	public static void main(String[] args) {
 		/*
