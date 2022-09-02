@@ -14,16 +14,13 @@ public class LambdaDosyaOkuma extends Methods {
         System.out.println("Siir Okuma 2. YOL");
         siirOkuma2();
         System.out.println("------------------");
-        System.out.println("1. YOL");
+        System.out.println("\nTASK 1  --> siirler.txt dosyasindaki ilk satiri buyuk harflerle yazdirin  -->  ");
 
+        System.out.println("------------------");
+        System.out.println("\nTASK 2 --> siirler.txt dosyasinda hatir kelimesinin kac satirda gectiginiz yazdiriniz -->  ");
 
         System.out.println("------------------");
         System.out.println("1. YOL");
-
-
-        System.out.println("------------------");
-        System.out.println("1. YOL");
-
 
         System.out.println("------------------");
         System.out.println("1. YOL");

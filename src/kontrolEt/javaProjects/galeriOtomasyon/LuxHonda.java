@@ -1,4 +1,4 @@
-package javaProjects.galeriOtomasyon;
+package kontrolEt.javaProjects.galeriOtomasyon;
 
 public class LuxHonda extends Araba implements IcAraba,DisAraba{
 

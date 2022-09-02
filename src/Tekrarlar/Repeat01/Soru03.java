@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Soru03 {
     /*
-        3.SORU :
         Kullanicidan 2 sayi girmesini isteyecegiz, girilen bu degerlerden biri saati digeri de dakikayi temsil edecek.
         bize akrep ile yelkovan arasindaki kucuk aciyi hesaplayip degeri acisal olarak donduren metodu yaziniz
         Ornek :
@@ -25,15 +24,14 @@ public class Soru03 {
     }
 
     public static double aciAkrepYelkovanFarki(double hour, double minutes) {
-        double aci = 0;
-        double dakikaAcisi = 0;
-        double saatAcisi = 0;
-        if (hour > 11) hour -= 12;
-        dakikaAcisi = 6 * minutes;
-        saatAcisi = hour * 30 + 0.5 * minutes;
-        aci = dakikaAcisi - saatAcisi;
-        if (aci < 0) aci *= -1;
-        if (aci > 180) aci = 360 - aci;
-        return aci;
+        hour %= 12;
+        double minuteAngle = 6 * minutes;
+        double hourAngle = hour * 30 + 0.5 * minutes;
+        double angle = Math.abs(minuteAngle - hourAngle);
+        if (angle > 180) angle = 360 - angle;
+        return angle;
     }
 }
+
+
+
