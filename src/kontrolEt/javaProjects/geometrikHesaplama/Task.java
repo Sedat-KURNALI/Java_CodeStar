@@ -9,7 +9,7 @@ package javaProjects.geometrikHesaplama;
      sekil <--Dikdortgen<--Kare
 
     2- Turetilen class'a uygun olanlarina yaricap,  uzunluk ve genislik ekleyiniz.
-    3- Runner class'da obj'lerin  alan ve cevre hesaplamasi yaptirip sonuclari yazdiriniz.
+    3- Tekrarlar.Repeat03.Runner class'da obj'lerin  alan ve cevre hesaplamasi yaptirip sonuclari yazdiriniz.
     */
 
 
